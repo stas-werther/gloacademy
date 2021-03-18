@@ -11,6 +11,7 @@ a {
 
 .header {
   max-width: 1146px;
+  width: 90%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -36,4 +37,58 @@ a {
 .user {
   display: flex;
   align-items: center;
+}
+.app {
+  background: linear-gradient(90deg, #010202 -2.88%, rgba(1, 2, 2, 0.2) 44.9%), 
+  url('../images/cover-image.jpg') no-repeat top right;
+  min-height: 100vh;
+  color: white;
+}
+.film {
+  max-width: 1146px;
+  width: 90%;
+  margin: auto;
+  padding: 8.6% 0;
+}
+.tags {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.tags > * {
+  margin-right: 15px;
+  opacity: 0.4;
+  font-size: 16px;
+  line-height: 140%;
+  color: #E5E5E5;
+}
+.description {
+  max-width: 460px;
+  font-size: 21px;
+  line-height: 140%;
+  margin-bottom: 36px;
+}
+.age {
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 1px 5px;
+}
+.button {
+  padding: 11px 26px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  line-height: 140%;
+  background: #2F2F2F;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.button-primary {
+  background: #EA6E20;
+  margin-right: 15px;
+}
+.button-text {
+  margin-left: 10px;
+  vertical-align: text-bottom;
 }
