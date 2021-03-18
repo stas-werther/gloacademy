@@ -39,8 +39,7 @@ a {
   align-items: center;
 }
 .app {
-  background: linear-gradient(90deg, #010202 -2.88%, rgba(1, 2, 2, 0.2) 44.9%), 
-  url('../images/cover-image.jpg') no-repeat top right;
+  background: linear-gradient(90deg, #010202 0%, #010202 43%, rgba(1, 2, 2, 0.2) 90.9%);
   min-height: 100vh;
   color: white;
 }
@@ -52,15 +51,17 @@ a {
 }
 .tags {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: flex-start;
-}
-.tags > * {
-  margin-right: 15px;
   opacity: 0.4;
   font-size: 16px;
   line-height: 140%;
   color: #E5E5E5;
+}
+.tags > * {
+  margin-right: 15px;
+  margin-bottom: 10px;
 }
 .description {
   max-width: 460px;
@@ -91,4 +92,40 @@ a {
 .button-text {
   margin-left: 10px;
   vertical-align: text-bottom;
+}
+
+@media (max-width: 768px) {
+  .app {
+    height: auto;
+    padding-bottom: 400px;
+    background: url('../images/cover-image.jpg') no-repeat bottom center / 350px;
+  }
+  video {
+    display: none;
+  }
+  .film {
+    padding-top: 3%;
+  }
+  .description {
+    font-size: 16px;
+    max-width: 333px;
+  }
+  .film-logo {
+    max-width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .button-text {
+    display: none;
+  }
+  .user-name {
+    display: none;
+  }
+  .app {
+    padding-bottom: 350px;
+    background-size: 250px;
+  }
+  .button {
+    margin-bottom: 10px;
+  }
 }
